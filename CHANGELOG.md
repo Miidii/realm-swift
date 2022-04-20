@@ -2,6 +2,8 @@
 =============================================================
 
 ### Enhancements
+### Fixed
+* Defer `Realm.asyncOpen` operation on `@AsyncOpen` and `@AutoOpen` property wrappers, this will guarantee all the environment values are setted before opening any realm.
 
 * Add support for Xcode 14. When building with Xcode 14, the minimum deployment
   target is now iOS 11.
